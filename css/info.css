@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+.body{
+    background-color: rgba(9, 211, 93, 0.877);
+}
+tbody:nth-child(odd) {
+    background-color: rgba(0, 0, 255, 0.4);
+}
+tbody{
+    font-size: 1.7rem;
+}
+thead{
+    font-size: 1.7rem;  
+}
+.userImage{
+    height: 8rem;
+    width: 9rem;
+    border-radius: 50%;
+    border: 0.2rem solid lime ;
+}
+/* -------------------- Rsponsive design start --------------------*/
+html{
+    font-size: 62.5%;
+}
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 62.5%;
+    }
+}
+@media screen and (max-width:1000px) {
+    html{
+        font-size: 54.5%;
+    }
+}
+@media screen and (max-width:900px) {
+    html{
+        font-size: 48.5%;
+    }
+}
+@media screen and (max-width:700px) {
+    html{
+        font-size: 38.5%;
+    }
+}
+@media screen and (max-width:500px) {
+    html{
+        font-size: 29.5%;
+    }
+}
+/* -------------------- Rsponsive design end --------------------*/

@@ -1,0 +1,115 @@
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	
+}
+body{
+	background-image: url("../image/updateback.jpg");
+	background-size: cover;
+}
+/*---------- form start  -------------*/
+.registerForm{
+	margin:auto ;
+	padding:4rem;
+	background-color:rgba(45,52,29,0.5);
+    font-size:1.8rem; 
+    text-align:center;
+    color:white;	
+	width:66rem;
+}
+
+.formHead{
+	width:66rem;
+	height:7rem;
+	margin:auto ;
+	padding:2rem;
+	background-color:rgba(235, 12, 41, 0.4);
+    font-size:2rem; 
+    text-align:center;
+    color:white;	
+}
+
+.nameGroup , .usernameGroup , .passwordGroup , .emailGroup , 
+.countryGroup , .genderGroup , .profileGroup{
+display:flex;
+margin:1rem;
+}
+
+.name , .username , .password , .email , .country , .gender , .profile {
+	border-top-right-radius:5rem;
+	border-bottom-right-radius:5rem;
+	border:none;
+	background-color:white;
+	color:rgb(0, 55, 128);
+	font-family:cursive;
+	font-size:1.8rem;
+	width:50rem;
+	padding:1.5rem;
+}
+label{
+	border-top-left-radius:5rem;
+	border-bottom-left-radius:5rem;
+	border:none;
+	background-color:rgba(0, 4, 255, 0.5);
+	color:white;
+	font-family:cursive;
+	font-size:1.8rem;	
+	text-align:center;
+	width:18rem;
+	padding-top:1rem;
+}
+.hover:hover  > label{
+	background-color:rgba(0, 255, 0, 0.4);
+	transition-duration:1s;
+}
+.register{
+	width:17rem;
+	height:5.2rem;
+	background-color:rgba(153, 0, 255, 0.6);
+	color:white;
+	text-align:center;
+	border:none;
+	border-radius:3rem;
+}
+.register:hover{
+    background-color:rgba(0, 17, 255, 0.6);
+    transition-duration: 1s;
+}
+/*---------- form end  -------------*/
+
+
+/*---------------- RWD start ----------------*/
+html{
+	font-size:62.5%;
+}
+
+@media screen and (max-width:1000px) {
+	html{
+	font-size:62.5%;
+}
+}
+
+@media screen and (max-width:9000px) {
+	html{
+	font-size:50.5%;
+}
+}
+@media screen and (max-width:700px) {
+	html{
+	font-size:45.5%;
+}
+}
+
+@media screen and (max-width:500px) {
+	html{
+	font-size:35.5%;
+}
+}
+
+@media screen and (max-width:400px) {
+	html{
+	font-size:29.5%;
+}
+}
+/*---------------- RWD end ----------------*/

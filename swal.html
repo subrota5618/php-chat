@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> swal </title>
+</head>
+<body>
+    <button onclick="msg()"> Click me </button>
+    <button onclick="deleteMsg()" > Delete me </button>  
+
+    <div>
+
+    </div>
+<script>
+function msg() {
+ swal("Congrasulation" , "Your from has been submitted" , "success") ;
+}
+function deleteMsg() {
+    swal({
+  title: "Are you sure?",
+  text: "Once deleted, you will not be able to recover this imaginary file!",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+
+})
+.then((willDelete) => {
+  if (willDelete) {
+    swal("Poof! Your imaginary file has been deleted!", {
+      icon: "success",
+    });
+  } else {
+    swal("Your imaginary file is safe!" , {
+        icon: "success",   
+    });
+  }
+});
+}
+</script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

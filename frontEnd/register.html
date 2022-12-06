@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="../css/register.css"/>
+<meta char="utp-8" >
+<title>  Register </title>
+<link rel="shortcut icon" href="../image/registerLogo.png" type="image/x-icon">
+</head>
+<body>
+<br><br>
+<div class="formHead"> Register Form </div>
+<form method="post"  action="../backEnd/register.php"  enctype="multipart/form-data" class="registerForm"/>
+
+<div class="nameGroup hover">
+<label for="name" > Name </label>
+<input type="text" class="name" name="name" placeholder="Enter your name" required/>
+</div>
+
+<div class="usernameGroup hover">
+<label for="username" > Username </label>
+<input type="text" class="username" name="username" placeholder="Enter an username"  min="8" max="40" required/>
+</div>
+
+<div class="passwordGroup hover">
+<label for="password" > Password </label>
+<input type="password" class="password" name="password" placeholder="Enter strong password" min="10" max="50" required/>
+</div>
+
+<div class="emailGroup hover">
+<label for="email" > Email </label>
+<input type="email" class="email" name="email" placeholder="Enter valid email" required/>
+</div>
+
+<div class="countryGroup hover">
+<label for="country" > Country </label>
+<select name="country" class="country" />
+<option disabled> Select your country </option> 
+<option > Bangladesh </option> 
+<option > India </option> 
+<option > Pakisthan </option> 
+<option > Japan </option> 
+<option > Vutan </option> 
+<option > Srilanka </option> 
+<option > England </option> 
+<option > USA </option> 
+<option > Other </option> 
+</select>
+</div>
+
+<div class="genderGroup hover">
+<label for="gender" > Gender </label>
+<select name="gender" class="gender" />
+<option disabled> Select your Gender </option> 
+<option > Male </option> 
+<option > Female </option> 
+<option > Eunuch </option> 
+<option > Other </option> 
+</select>
+</div>
+
+
+<div class="profileGroup hover">
+<label for="Profile" > Profile </label>
+<input type="file" class="profile" name="profile"  required/>
+</div>
+
+<div class="buttonGroup">
+<button type="submit" class="register"  name="register"> Register </button>
+</div>
+
+<h3> Have an account ? <a href="login.html" target="blank"> Log in <a> </h3>
+<br>
+&copy; Copy right by subrot chandra sarker 
+</form>
+<br><br>
+</body>
+</html?

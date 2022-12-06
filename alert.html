@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .btn{
+            margin-top: 185px;
+            margin-left: 50%;
+            padding-top: 120px;
+            width: 120px;
+            padding:10px;
+            border-radius: 20px;
+            background-color: indigo;
+            color: white;
+            border: none;
+        }
+        body{
+            background-color: black;
+        }
+    </style>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sweet js alert </title>
+</head>
+<body>
+    
+<button onclick="alertBox()" class="btn">  Send message  </button>
+<button onclick="alertBox2()" class="btn">  Delete  </button>
+<button onclick="alertBox3()" class="btn">  return confirm   </button>
+<!-- ---------------- Sweet js alert box  -------------------------- -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
+
+
+<script>
+
+ function alertBox() {
+swal(" Gongrasulation " , "Your information has been submited" , "success") ;
+    }
+//return confirm 
+
+
+function alertBox3() {
+swal({
+  text : "This is my button" , 
+  title:"My message" ,
+  buttons: ["Continue", "Exit"],
+});
+    }  
+function alertBox2() {
+    swal({
+  title: "Are you sure?",
+  text: "Once deleted, you will not be able to recover this imaginary file!",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+    swal("Poof! Your imaginary file has been deleted!", {
+      icon: "success",
+    });
+  } else {
+    swal("Your imaginary file is safe!" , {
+        icon: "success",
+    } );
+  }
+});
+    }
+</script>
