@@ -13,7 +13,7 @@ if(isset($_POST['submit'])) {
     $_SESSION['otpCode']  = $otpCode ;
     header("location:otpForm.php");
     }else{
-        echo "<h2 style='color:red;'>Invalid email enter valid email to proceed . </h2>" ;
+        header("location:email.html");
     }
 }
 

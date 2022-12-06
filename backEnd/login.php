@@ -17,4 +17,11 @@ if(isset($_REQUEST['Login'])) {
 	if($row_count==true){
      header("location:chat.php");
 	}else{
- echo "Invalid log in information " ; } } ?>
+ ?>
+<script>
+alert("Invalid log in information ") ;
+window.location = "/" ;
+	</script>
+ <?php
+ 
+ } } ?>

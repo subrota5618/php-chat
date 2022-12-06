@@ -251,10 +251,20 @@ if( ($_SESSION['usernameEmail'] && $_SESSION['usernameEmail']== $reciver_usernam
 <?php
 	exit() ;
 }else{
+//check message
+$getCollectionMessage = "SELECT text FROM `chat` WHERE text='$getMessage'"  ;
+$queryMessage = mysqli_query($con , $getCollectionMessage) ;
+if($queryMessage===true) {
+exit() ;
+}
 //-------------------
 $insertChat = "INSERT INTO `chat` (`sender_username` , `reciver_username` , `text` , `time`)
 VALUES('$sender_username ' , '$reciver_username' , '$getMessage' , '$time')";
-$messageQuery = mysqli_query($con , $insertChat);}} } 
+$messageQuery = mysqli_query($con , $insertChat);
+if($messageQuery){
+
+}
+}} } 
 }else {
 	header("location:../backEnd/logout.php");
 }?>

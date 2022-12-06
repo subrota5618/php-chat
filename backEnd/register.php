@@ -60,7 +60,7 @@ if($profileSize > 1048576) {
 exit();
 	}
 	$extention = pathinfo($profileName , PATHINFO_EXTENSION);
-	$allowed = array("jpg"  , "png " , "jpeg");
+	$allowed = array("jpg"  , "png" , "jpeg"); 
 	$allowedExt = in_array($extention , $allowed);
 	if(!$allowedExt) {
 		?>
@@ -69,7 +69,7 @@ exit();
 			window.location = "../frontEnd/register.html" ;
 		</script>
 		<?php
-		exit();
+		// exit();
 	}
 	$newName = time() . "." . $extention ;
 	$location = "../upload/".$newName ;
@@ -86,7 +86,12 @@ $insert = "INSERT INTO `userchat`(`name` ,`username` ,`password` , `email` , `co
 VALUES ( '$name' ,  '$username' ,   '$password_scure' ,  '$email' ,  '$country' ,  '$gender' ,  '$newName' ,  '$time' )";
 $query = mysqli_query($con  , $insert );
 if($query==true) {
-	header("location:chat.php");
+	?>
+	<script type="text/javascript">
+		alert(" Account created successfully ") ;
+		window.location = "/../chat/backEnd/chat.php" ;
+	</script>
+	<?php
 }else{
 	?>
 	<script type="text/javascript">

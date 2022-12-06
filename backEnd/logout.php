@@ -10,5 +10,5 @@ if(isset($_REQUEST['logoutId'])){
 }
 //destroy 
 session_destroy();
-header("location:../frontEnd/login.html");
+header("location:../index.php");
 ?>

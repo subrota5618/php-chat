@@ -7,6 +7,7 @@
 body{
 	background-image: url("../image/registerBack.jpg");
 	background-size: cover;
+	font-weight: bolder;
 }
 /*---------- form start  -------------*/
 .registerForm{
@@ -24,7 +25,7 @@ body{
 	height:7rem;
 	margin:auto ;
 	padding:2rem;
-	background-color:cyan;
+	background-color:rgb(255, 0, 128);
     font-size:2rem; 
     text-align:center;
     color:white;	
@@ -51,7 +52,7 @@ label{
 	border-top-left-radius:5rem;
 	border-bottom-left-radius:5rem;
 	border:none;
-	background-color:cyan;
+	background-color:rgb(231, 13, 148);
 	color:white;
 	font-family:cursive;
 	font-size:1.8rem;	
