@@ -6,11 +6,12 @@
 <title>  Log in  </title>
 <link rel="shortcut icon" href="../image/loginLogo.gif" type="image/x-icon">
 </head>
-<body>
+<body id="body">
+    
 <br><br>
-<div class="formHead">  <p> Login Form  </p> </div>
-<form method="post" action="../backEnd/login.php" class="loginForm"/>
-
+<div class="form">
+<div class="formHead">  <p style="font-weight:bolder;"> Login Form  </p> </div>
+<form method="post" action="/backEnd/login.php" class="loginForm">
 <div class="usernameGroup hover">
 <label for="username" > Username </label>
 <input type="text" class="username" name="username" placeholder="Enter username or email "  min="8" max="40" required/>
@@ -40,6 +41,8 @@
 <br>
 &copy; Copy right by subrot chandra sarker 
 </form>
-<br><br>
+</div>
+
+<br/><br/>
 </body>
-</html?
+</html>

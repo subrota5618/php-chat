@@ -87,11 +87,13 @@ VALUES ( '$name' ,  '$username' ,   '$password_scure' ,  '$email' ,  '$country' 
 $query = mysqli_query($con  , $insert );
 if($query==true) {
 	?>
+	
 	<script type="text/javascript">
 		alert(" Account created successfully ") ;
-		window.location = "/../chat/backEnd/chat.php" ;
 	</script>
 	<?php
+
+	header("location:chat.php") ;
 }else{
 	?>
 	<script type="text/javascript">
